@@ -25,5 +25,3 @@ Typically the returned payload will be an array of the result rows.
 
 If nothing is found for the key then <i>null</i> is returned.
 
-The reconnect retry timeout in milliseconds can be changed by adding a line to <b>settings.js</b>
-    <pre>firebirdReconnectTime: 30000,</pre></p>
