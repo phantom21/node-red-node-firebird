@@ -1,23 +1,23 @@
 
 <script type="text/x-red" data-template-name="Firebirddatabase">
     <div class="form-row">
-        <label for="node-config-input-host"><i class="fa fa-globe"></i> Host</label>
+        <label for="node-config-input-host"><i class="fa fa-globe"></i> <span data-i18n="firebird.label.host"></span></label>
         <input type="text" id="node-config-input-host">
     </div>
     <div class="form-row">
-        <label for="node-config-input-port"><i class="fa fa-random"></i> Port</label>
+        <label for="node-config-input-port"><i class="fa fa-random"></i> <span data-i18n="firebird.label.port"></span></label>
         <input type="text" id="node-config-input-port">
     </div>
         <div class="form-row">
-        <label for="node-config-input-user"><i class="fa fa-user"></i> User</label>
+        <label for="node-config-input-user"><i class="fa fa-user"></i> <span data-i18n="firebird.label.user"></span></label>
         <input type="text" id="node-config-input-user">
     </div>
         <div class="form-row">
-        <label for="node-config-input-pass"><i class="fa fa-lock"></i> Password</label>
+        <label for="node-config-input-pass"><i class="fa fa-lock"></i> <span data-i18n="firebird.label.password"></span></label>
         <input type="password" id="node-config-input-password">
     </div>
     <div class="form-row">
-        <label for="node-config-input-db"><i class="fa fa-database"></i> Database</label>
+        <label for="node-config-input-db"><i class="fa fa-database"></i> <span data-i18n="firebird.label.database"></span></label>
         <input type="text" id="node-config-input-db">
     </div>
 </script>
@@ -43,11 +43,11 @@
 
 <script type="text/x-red" data-template-name="firebird">
     <div class="form-row">
-        <label for="node-input-firebirddb"><i class="fa fa-database"></i> Database</label>
+        <label for="node-input-firebirddb"><i class="fa fa-database"></i> <span data-i18n="firebird.label.database"></span></label>
         <input type="text" id="node-input-firebirddb">
     </div>
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="firebird.label.name"></span></label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
@@ -59,9 +59,7 @@
     <p><code>msg.topic</code> must hold the <i>query</i> for the database, and the result is returned in <code>msg.payload</code>.</p>
     <p><code>msg.payload</code> can contain an array of values to bind to the topic.</p>
     <p>Typically the returned payload will be an array of the result rows.</p>
-    <p>If nothing is found for the key then <i>null</i> is returned,</p>
-    <p>The reconnect timeout in milliseconds can be changed by adding a line to <b>settings.js</b>
-    <pre>firebirdReconnectTime: 30000,</pre></p>
+    <p>If nothing is found for the key then <i>null</i> is returned.</p>
 </script>
 
 <script type="text/javascript">

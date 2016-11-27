@@ -1,6 +1,6 @@
 {
     "name"          : "node-red-node-firebird",
-    "version"       : "0.0.1",
+    "version"       : "0.0.2",
     "description"   : "A Node-RED node to read and write to a Firebird database",
     "dependencies"  : {
         "node-firebird"   : "0.7.5"
