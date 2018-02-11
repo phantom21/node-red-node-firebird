@@ -35,7 +35,7 @@
             password: {type: "password"}
         },
         label: function() {
-            return this.db;
+            return (this.host+":"+this.db);
         }
     });
 </script>
